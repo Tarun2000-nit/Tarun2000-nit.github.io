@@ -100,7 +100,7 @@ a{
 
     background-color: #fff;
     border: 1px solid #ddd;
-    float: right;
+    float: center;
     border-radius: 4px;
     margin-left:1%;
 }
@@ -109,10 +109,25 @@ a{
     max-width: 100%;
     height: auto;
 }
-.caption{
-     display: block;
+.thumbnail-big{
+    display: block;
     max-width: 100%;
     height: auto;
+    align-items: center;
+}
+.big-image{
+    align-self: center;
+}
+.caption{
+    display: block;
+   max-width: 100%;
+   height: auto;
+}
+.caption-big{
+    display: block;
+   max-width: 100%;
+   height: auto;
+   text-align: center;
 }
 footer{
     background-color: #000;
@@ -120,3 +135,19 @@ footer{
     font-size:14px;
     text-align: center;
 }
+@keyframes slideOutUp {
+    from {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  
+    to {
+      visibility: hidden;
+      -webkit-transform: translate3d(0, -100%, 0);
+      transform: translate3d(0, -100%, 0);
+    }
+  }
+  .animate__slideOutUp {
+    -webkit-animation-name: slideOutUp;
+    animation-name: slideOutUp;
+  }
